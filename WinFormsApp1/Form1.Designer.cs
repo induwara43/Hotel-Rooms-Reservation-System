@@ -43,6 +43,8 @@
             label5 = new Label();
             totalBox = new TextBox();
             label6 = new Label();
+            daysBox = new TextBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // nameBox
@@ -129,6 +131,7 @@
             clearBtn.TabIndex = 14;
             clearBtn.Text = "Clear";
             clearBtn.UseVisualStyleBackColor = true;
+            clearBtn.Click += clearBtn_Click;
             // 
             // exitBtn
             // 
@@ -138,6 +141,7 @@
             exitBtn.TabIndex = 15;
             exitBtn.Text = "Exit";
             exitBtn.UseVisualStyleBackColor = true;
+            exitBtn.Click += exitBtn_Click;
             // 
             // anotherBox
             // 
@@ -173,11 +177,29 @@
             label6.TabIndex = 18;
             label6.Text = "Total Price";
             // 
+            // daysBox
+            // 
+            daysBox.Location = new Point(466, 330);
+            daysBox.Name = "daysBox";
+            daysBox.Size = new Size(65, 23);
+            daysBox.TabIndex = 21;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(336, 333);
+            label7.Name = "label7";
+            label7.Size = new Size(93, 15);
+            label7.TabIndex = 20;
+            label7.Text = "Number of Days";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(daysBox);
+            Controls.Add(label7);
             Controls.Add(totalBox);
             Controls.Add(label6);
             Controls.Add(anotherBox);
@@ -217,5 +239,7 @@
         private Label label5;
         private TextBox totalBox;
         private Label label6;
+        private TextBox daysBox;
+        private Label label7;
     }
 }
