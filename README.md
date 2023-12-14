@@ -1,4 +1,4 @@
-# Hotel Reservation System - Visual Programming Assignment
+# Hotel Reservation System - Visual Programming Assignment 
 
 This project is a part of the Visual Programming course module at my University. It is a Very Simple Hotel Reservation System implemented using Windows Forms in C#.
 
