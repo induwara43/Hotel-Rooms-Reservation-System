@@ -129,7 +129,7 @@ namespace WinFormsApp1
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            
+            Close();
         }
     }
 }
